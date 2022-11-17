@@ -1,7 +1,5 @@
-package task1;
+package main.task1;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -13,16 +11,16 @@ import java.util.stream.Stream;
  */
 
 public class Task1 {
-    public boolean isValidNumber(Integer numberTicket) {
+    static public boolean isValidNumber(Integer numberTicket) {
         int numberLength = numberTicket.toString().length();
         if ((numberLength < 2 || numberLength > 9) || numberLength % 2 != 0) {
-//            System.out.println("Wrong number ticket!");
+            System.out.println("Wrong number ticket!");
             return false;
         }
         return true;
     }
 
-    public boolean isWin(Integer numberTicket) {
+    static public boolean isWin(Integer numberTicket) {
         int numberLength = numberTicket.toString().length();
         int sumFirstHalf = 0, sumLastHalf = 0;
         List<Integer> numbersFromTicket = Stream.of(numberTicket.toString().split("")).
