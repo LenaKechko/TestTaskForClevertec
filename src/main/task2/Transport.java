@@ -1,57 +1,52 @@
 package main.task2;
 
-abstract public class Transport {
-    private int yearCreat;
-    private String brand;
-    private String model;
-    private String typeFuel;
-    private int fuelEconomy;
+public class Transport {
+    private int yearOfManufacture; //год выпуска
+    private String model; // модель
+    private String brand; // марка
+    private String typeFuel; // вид топлива
+    private double fuelEconomy; // расход топлива
+    private double countFuel = 0; // количество топлива
 
-    public Transport(int yearCreat, String brand, String model, String typeFuel, int fuelEconomy) {
-        this.yearCreat = yearCreat;
-        this.brand = brand;
+    public Transport(int yearOfManufacture, String model, String brand, String typeFuel, double fuelEconomy) {
+        this.yearOfManufacture = yearOfManufacture;
         this.model = model;
+        this.brand = brand;
         this.typeFuel = typeFuel;
         this.fuelEconomy = fuelEconomy;
     }
 
-    public int getYearCreat() {
-        return yearCreat;
-    }
-
-    public void setYearCreat(int yearCreat) {
-        this.yearCreat = yearCreat;
-    }
-
-    public String getBrand() {
-        return brand;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
+    public int getYearOfManufacture() {
+        return yearOfManufacture;
     }
 
     public String getModel() {
         return model;
     }
 
-    public void setModel(String model) {
-        this.model = model;
+    public String getBrand() {
+        return brand;
     }
 
     public String getTypeFuel() {
         return typeFuel;
     }
 
-    public void setTypeFuel(String typeFuel) {
-        this.typeFuel = typeFuel;
-    }
-
-    public int getFuelEconomy() {
+    public double getFuelEconomy() {
         return fuelEconomy;
     }
 
-    public void setFuelEconomy(int fuelEconomy) {
-        this.fuelEconomy = fuelEconomy;
+    public double getCountFuel() {
+        return countFuel;
     }
+
+    public void fill(double addFuel) {
+        this.countFuel += addFuel;
+    }
+
+    public void repair() {
+
+    }
+
+
 }
