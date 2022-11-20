@@ -12,7 +12,7 @@ public class Machine {
         this.plateGlass = new PlateGlass(segments.getSegments());
     }
 
-     /* рабочий ход */
+    /* рабочий ход */
     public void powerStroke() {
         this.cutter = true;
     }
@@ -23,6 +23,10 @@ public class Machine {
     }
 
     public void move(Segments segments, Figure figure) {
-        segments.addSegment(figure.transformPointInSegments());
+        Segments newSegments = new Segments();
+        newSegments.addSegment(segments.getSegments());
+        newSegments.addSegment(figure.transformPointInSegments());
     }
+
+
 }
