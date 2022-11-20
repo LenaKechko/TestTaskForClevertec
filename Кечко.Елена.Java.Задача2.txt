@@ -1,0 +1,27 @@
+Состав автопарка:
+yearOfManufacture=2022, model='МАЗ', brand='5440', typeFuel='дизель', fuelEconomy=12.0, volumeTank=45.0, countFuel=0.0 bodyCapacity=5.0, loadCapacity=12.0. Кузов не опломбирован
+yearOfManufacture=2020, model='МАЗ', brand='18', typeFuel='дизель', fuelEconomy=5.0, volumeTank=100.0, countFuel=0.0, passengerCapacity=30, freePassengerCapacity=30
+yearOfManufacture=2021, model='МАЗ', brand='666', typeFuel='бензин', fuelEconomy=5.0, volumeTank=30.0, countFuel=0.0, passengerCapacity=4, freePassengerCapacity=4, bodyTransport=bodyCapacity=5.0, loadCapacity=5.0.Кузов не опломбирован
+Проверка и ремонт грузовика:
+МАЗ 5440 обслужена
+Дезинфекция автобуса:
+Салон МАЗ 18 был продезинфецирован!
+Заправка микроавтобуса:
+МАЗ 666 заправлена
+
+Поступление и обработка заказов:
+startWay='Гомель', endWay='Речица, countPassenger=10
+Заказ принят
+startWay='Минск', endWay='Гомель, volume=2.0, weight=2.0, typeCargo='продукты питания
+Заказ принят
+startWay='Минск', endWay='Гомель, volume=2.0, weight=2.0, typeCargo='продукты питания', countPassenger=10
+Заказ не может быть принят
+Список выполняемых заказов:
+1. yearOfManufacture=2020, model='МАЗ', brand='18', typeFuel='дизель', fuelEconomy=5.0, volumeTank=100.0, countFuel=0.0, passengerCapacity=30, freePassengerCapacity=30
+startWay='Гомель', endWay='Речица, countPassenger=10
+2. yearOfManufacture=2022, model='МАЗ', brand='5440', typeFuel='дизель', fuelEconomy=12.0, volumeTank=45.0, countFuel=0.0 bodyCapacity=5.0, loadCapacity=12.0. Кузов опломбирован
+startWay='Минск', endWay='Гомель, volume=2.0, weight=2.0, typeCargo='продукты питания
+
+Список выполняемых заказов, после завершения некоторых:
+1. yearOfManufacture=2022, model='МАЗ', brand='5440', typeFuel='дизель', fuelEconomy=12.0, volumeTank=45.0, countFuel=0.0 bodyCapacity=5.0, loadCapacity=12.0. Кузов опломбирован
+startWay='Минск', endWay='Гомель, volume=2.0, weight=2.0, typeCargo='продукты питания
